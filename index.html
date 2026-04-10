@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Web3 Task Assistant</title>
+</head>
+<body>
+
+<h2>AI Web3 Task Assistant</h2>
+
+<input id="input" placeholder="Ask about Web3 tasks..." />
+<button onclick="askAI()">Ask</button>
+
+<p id="output"></p>
+
+<script>
+function askAI() {
+  let input = document.getElementById("input").value.toLowerCase();
+
+  let response = "";
+
+  if (input.includes("today")) {
+    response = "Today: Join Discord, complete testnet tasks, check airdrops, and engage on X.";
+  } 
+  else if (input.includes("airdrop")) {
+    response = "Stay active in Discord, follow tasks, and track eligibility requirements.";
+  } 
+  else if (input.includes("web3")) {
+    response = "Web3 tip: Stay active daily, join communities, and test new protocols.";
+  } 
+  else {
+    response = "Try asking: 'What should I do today in Web3?'";
+  }
+
+  document.getElementById("output").innerText = response;
+}
+</script>
+
+</body>
+</html>
